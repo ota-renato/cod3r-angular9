@@ -8,21 +8,21 @@ import { HeaderService } from './header.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private _headerService: HeaderService) { }
+  constructor(private headerService: HeaderService) { }
 
   ngOnInit(): void {
   }
 
   get title(): string {
-    return this._headerService.headerData.title
+    return this.headerService.headerData.title;
   }
 
   get icon(): string {
-    return this._headerService.headerData.icon
+    return this.headerService.headerData.icon;
   }
 
   get routeUrl(): string {
-    return this._headerService.headerData.routeUrl
+    return this.headerService.headerData.routeUrl;
   }
 
 }

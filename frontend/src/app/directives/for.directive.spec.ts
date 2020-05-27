@@ -2,7 +2,7 @@ import { ForDirective } from './for.directive';
 
 describe('ForDirective', () => {
   it('should create an instance', () => {
-    const directive = new ForDirective();
+    const directive = new ForDirective(null, null);
     expect(directive).toBeTruthy();
   });
 });

@@ -11,12 +11,12 @@ export class HeaderService {
     title: 'Inicio',
     icon: 'home',
     routeUrl: ''
-  })
+  });
 
   constructor() { }
 
   get headerData(): HeaderData {
-    return this._headerData.value
+    return this._headerData.value;
   }
 
   set headerData(headerData: HeaderData) {
